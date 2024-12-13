@@ -1,1 +1,54 @@
-# Resume1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Your Name] - Resume</title> <!-- Jordan Bauer -->
+</head>
+<body>
+  <header>
+    <h1>[Your Name]</h1> <!-- Your name -->
+    <p>[Your Job Title]</p> <!-- Your job title, e.g., Software Engineer -->
+    <p>Email: <a href="mailto:[your.email@example.com]">[your.email@example.com]</a></p> <!-- Your email address -->
+    <p>Phone: [Your Phone Number]</p> <!-- Your phone number (optional) -->
+    <p>Location: [Your Location]</p> <!-- Your location (optional) -->
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>[A short summary about you, your skills, and your career goals]</p> <!-- Write a brief summary about yourself -->
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>[Job Title]</strong> at [Company Name] - [Start Date] to [End Date]</li>
+      <li>[Job Description or Achievements]</li>
+      <li><strong>[Job Title]</strong> at [Company Name] - [Start Date] to [End Date]</li>
+      <li>[Job Description or Achievements]</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>[Degree, University Name, Graduation Year]</p> <!-- Your degree and university -->
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>[Skill 1]</li>
+      <li>[Skill 2]</li>
+      <li>[Skill 3]</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li>[Certification Name] - [Date]</li> <!-- Your certifications -->
+      <li>[Certification Name] - [Date]</li>
+    </ul>
+  </section>
+</body>
+</html>
