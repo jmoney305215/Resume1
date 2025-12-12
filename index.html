@@ -1,148 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jordan Bauer - IT Technician</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jordan Bauer — Resume</title>
+  <meta name="description" content="Jordan Bauer - IT Technician resume" />
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+    :root{
+      --accent:#0b6cff;
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --maxw:900px;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    header {
-      background-color: #005f73;
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3.5em;
-      font-weight: 700;
-    }
-    header p {
-      margin: 5px 0;
-      font-size: 1.2em;
-    }
-    section {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 40px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-    section h2 {
-      color: #005f73;
-      font-size: 2em;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #005f73;
-      padding-bottom: 8px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 10px 0;
-      padding-left: 10px;
-      border-left: 4px solid #005f73;
-    }
-    .job-title {
-      font-weight: bold;
-      color: #005f73;
-      margin-top: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #005f73;
-      color: white;
-      font-size: 1em;
-    }
-    footer a {
-      color: #a3d8ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Jordan Bauer</h1>
-    <p>IT Technician</p>
-    <p>Email: <a href="mailto:jordybauer1@gmail.com">jordybauer1@gmail.com</a> | Phone: (561) 843-7440</p>
-  </header>
-
-  <section>
-    <h2>Professional Experience</h2>
-
-    <p class="job-title">The Polo Club of Boca Raton — IT Technician | Boca Raton, FL | July 2023 – Present</p>
-    <ul>
-      <li>Provided comprehensive support for 400+ employees, covering hardware, software, network, and account-related issues.</li>
-      <li>Deployed and maintained Ubiquiti access points via UniFi, and managed systems/software installations across the property.</li>
-      <li>Used Endpoint Central and Atera for remote device management, patching, asset tracking, and monitoring.</li>
-      <li>Implemented system upgrades and security configurations to maintain network performance, reliability, and protection against threats.</li>
-      <li>Administered Active Directory and Outlook accounts, improving user access and streamlining onboarding/offboarding.</li>
-      <li>Assisted in migrating 200+ Cisco phones to Yealink/Teams, minimizing downtime and enhancing unified communications.</li>
-      <li>Worked with CrowdStrike for proactive threat detection and endpoint protection.</li>
-      <li>Oversaw IT inventory and procurement processes to support equipment readiness and budget compliance.</li>
-    </ul>
-
-    <p class="job-title">Rivero Real Estate Inc. — IT Support/Helpdesk | Miami, FL | April 2021 – April 2023</p>
-    <ul>
-      <li>Delivered technical support across all OSI layers, resolving hardware, software, and network issues.</li>
-      <li>Installed and configured switches, workstations, and software to ensure fully functional IT environments.</li>
-      <li>Documented and managed leasing systems and applications, supporting efficient property operations.</li>
-      <li>Produced and edited real estate listings, aiding marketing and client communications.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <p><strong>Cloud Certifications:</strong></p>
-    <ul>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>AWS Cloud Practitioner</li>
-      <li>Microsoft Certified: Azure Administrator Associate</li>
-    </ul>
-    <p><strong>Networking:</strong></p>
-    <ul>
-      <li>CompTIA Network+</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p><strong>Florida State University</strong><br />
-    Bachelor of Science in Economics | Class of 2021 | Tallahassee, FL</p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Technical Support & Troubleshooting</li>
-      <li>Hardware/Software Installation & Configuration</li>
-      <li>Network Management & Security</li>
-      <li>Active Directory & Microsoft Outlook</li>
-      <li>Microsoft Teams Admin Center</li>
-      <li>Ubiquiti Access Points & UniFi Software</li>
-      <li>Endpoint Central & Atera (RMM Tools)</li>
-      <li>CrowdStrike (Endpoint Security)</li>
-      <li>IT Inventory Management</li>
-      <li>Customer Relations & Communication</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Jordan Bauer | <a href="mailto:jordybauer1@gmail.com">Contact Me</a></p>
-  </footer>
-</body>
-</html>
+    html,body{height:100%;margin:0;background:#f6f7fb;color:var(--text)}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:28px;background:var(--bg);box-shadow:0 6px 20px rgba(12,18,31,0.06);border-radius:10px}
+    header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+    .name{font-size:20px;font-weight:700;letter-spacing:0.2px}
+    .sub{color:var(--muted);font-size:13px;margin-top:6px}
+    .grid{display:grid;grid-template-col
