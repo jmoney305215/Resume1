@@ -9,30 +9,31 @@
     body {
       margin: 0;
       padding: 0;
-      background: #f2f5f9;
+      background: #e8edf2;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      color: #111;
+      color: #1a1a1a;
     }
 
     /* HEADER */
     header {
-      background: #003049;
+      background: #0b3c49;
       color: white;
-      padding: 40px 20px;
+      padding: 45px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: bold;
     }
 
     header h2 {
-      margin: 8px 0 18px;
+      margin: 10px 0 15px;
       font-size: 1.3rem;
-      color: #dbefff;
+      font-weight: normal;
+      color: #c7e7f3;
     }
 
     header p {
@@ -41,7 +42,7 @@
     }
 
     header a {
-      color: #a3d8ff;
+      color: #a9e3ff;
       text-decoration: none;
       font-weight: bold;
     }
@@ -50,41 +51,26 @@
       text-decoration: underline;
     }
 
-    .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 22px;
-      background: #0ea5e9;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1.05rem;
-    }
-
-    .download-btn:hover {
-      background: #38bdf8;
-    }
-
-    /* CONTENT SECTIONS */
+    /* MAIN SECTIONS */
     section {
       max-width: 900px;
       margin: 35px auto;
       background: white;
-      padding: 28px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     h2 {
-      color: #005f73;
+      color: #0b3c49;
       margin-top: 0;
+      letter-spacing: 0.5px;
     }
 
     .job-title {
       font-weight: bold;
-      color: #005f73;
-      margin-top: 20px;
+      color: #0b3c49;
+      margin-top: 22px;
       font-size: 1.15rem;
     }
 
@@ -96,17 +82,40 @@
     ul li {
       margin: 12px 0;
       padding: 12px;
-      background: #f9f9f9;
-      border-left: 4px solid #005f73;
-      border-radius: 5px;
+      background: #f5f7f9;
+      border-left: 4px solid #0b6f82;
+      border-radius: 6px;
+    }
+
+    /* DOWNLOAD BUTTON AT BOTTOM */
+    .download-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 14px 26px;
+      background: #0b6f82;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.15rem;
+    }
+
+    .download-btn:hover {
+      background: #1399ac;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      background: #003049;
+      padding: 22px;
+      background: #0b3c49;
       color: white;
-      margin-top: 40px;
+      margin-top: 45px;
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -119,10 +128,6 @@
 
   <p>Email: <a href="mailto:jordybauer1@gmail.com">jordybauer1@gmail.com</a></p>
   <p>Phone: (561) 843-7440</p>
-
-  <a class="download-btn" href="Jordan_Bauer.pdf" target="_blank">
-    Download PDF Resume
-  </a>
 </header>
 
 
@@ -133,18 +138,18 @@
   <ul>
     <li>Provide technical support for 400+ employees across a multi-building campus.</li>
     <li>Troubleshoot and maintain network infrastructure including switches, APs, VLANs, and property-wide connectivity.</li>
-    <li>Manage user identity and access via Active Directory and Microsoft 365; improved provisioning workflows.</li>
+    <li>Manage user identity and access through Active Directory and Microsoft 365, improving onboarding workflows.</li>
     <li>Assist with endpoint protection tools such as CrowdStrike and general compliance monitoring.</li>
-    <li>Use Endpoint Central, Atera, and Goverlan for imaging, patching, and remote management.</li>
-    <li>Strong experience with Microsoft Teams Admin Center during migration from Cisco phones to Teams-based devices.</li>
-    <li>Support iOS work devices, Android signage tablets, and Linux systems for small projects.</li>
+    <li>Use Endpoint Central, Atera, and Goverlan for system imaging, patching, and remote remediation.</li>
+    <li>Extensive experience with the Microsoft Teams Admin Center during migration from Cisco phones to Teams-based devices.</li>
+    <li>Support iOS work phones & POS systems, Android digital signage devices, and Linux devices used in small projects.</li>
   </ul>
 
-  <p class="job-title">Helpdesk Technician — Rivero Real Estate Inc. (2021–2023)</p>
+  <p class="job-title">Administrative Assistant — Rivero Real Estate Inc. (2021–2023)</p>
   <ul>
-    <li>Provided daily support for hardware, software, printers, and basic networking issues.</li>
-    <li>Assisted agents with workstation setup, email configuration, and productivity tools.</li>
-    <li>Maintained documentation and offered guided support for walk-in clients.</li>
+    <li>Provided daily support for staff including hardware/software troubleshooting and workstation setups.</li>
+    <li>Assisted agents with email configuration, productivity tools, and general IT needs.</li>
+    <li>Handled in-office client assistance and maintained basic documentation and system organization.</li>
   </ul>
 </section>
 
@@ -156,7 +161,7 @@
     <li>Networking: VLANs, DHCP, DNS, UniFi</li>
     <li>Endpoint Central, Atera, Goverlan</li>
     <li>CrowdStrike (general endpoint security)</li>
-    <li>iOS, Android, Linux devices</li>
+    <li>iOS, Android, Linux systems</li>
     <li>Virtualization (open-source hypervisors)</li>
   </ul>
 </section>
@@ -175,6 +180,12 @@
   <ul>
     <li>Florida State University — B.S. Economics (2021)</li>
   </ul>
+</section>
+
+<section class="download-container">
+  <a class="download-btn" href="Jordan_Bauer.pdf" target="_blank">
+    Download PDF Resume
+  </a>
 </section>
 
 <footer>
