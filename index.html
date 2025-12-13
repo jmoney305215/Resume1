@@ -24,9 +24,7 @@
       --border: #1f2933;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -43,13 +41,12 @@
       padding: 40px 24px;
     }
 
-    /* HEADER */
     header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 20px;
-      margin-bottom: 50px;
+      margin-bottom: 56px;
     }
 
     .name {
@@ -74,11 +71,8 @@
       font-weight: 600;
     }
 
-    .contact a:hover {
-      text-decoration: underline;
-    }
+    .contact a:hover { text-decoration: underline; }
 
-    /* TOGGLE */
     .toggle {
       margin-top: 12px;
       cursor: pointer;
@@ -90,31 +84,28 @@
       background: transparent;
     }
 
-    /* SECTIONS */
-    section {
-      margin-bottom: 48px;
-    }
+    section { margin-bottom: 52px; }
 
     h2 {
-      font-size: 1.05rem;
-      letter-spacing: 0.12em;
+      font-size: 0.95rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 26px;
-      margin-bottom: 24px;
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 26px;
     }
 
     .job-title {
       font-weight: 600;
       font-size: 1.05rem;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     ul {
@@ -122,44 +113,36 @@
       margin: 0;
     }
 
-    ul li {
-      margin-bottom: 10px;
-    }
+    ul li { margin-bottom: 10px; }
 
-    /* SKILLS GRID */
     .skills {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
     }
 
     .skill {
-      padding: 10px 14px;
+      padding: 12px 16px;
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       font-size: 0.95rem;
     }
 
-    /* DOWNLOAD */
     .download {
       text-align: center;
-      margin-top: 60px;
+      margin-top: 70px;
     }
 
     .download a {
       display: inline-block;
-      padding: 14px 30px;
+      padding: 14px 32px;
       background: var(--accent);
       color: white;
       text-decoration: none;
       font-weight: 600;
       border-radius: 999px;
       font-size: 1rem;
-    }
-
-    .download a:hover {
-      opacity: 0.9;
     }
 
     footer {
@@ -170,13 +153,8 @@
     }
 
     @media (max-width: 720px) {
-      header {
-        flex-direction: column;
-        text-align: left;
-      }
-      .contact {
-        text-align: left;
-      }
+      header { flex-direction: column; }
+      .contact { text-align: left; }
     }
   </style>
 </head>
@@ -192,46 +170,51 @@
       <div class="contact">
         <div><a href="mailto:jordybauer1@gmail.com">jordybauer1@gmail.com</a></div>
         <div>(561) 843-7440</div>
+        <div>Delray Beach, FL</div>
         <button class="toggle" onclick="toggleTheme()">Toggle theme</button>
       </div>
     </header>
 
     <section>
-      <h2>Experience</h2>
+      <h2>Professional Experience</h2>
 
       <div class="card">
         <div class="job-title">IT Technician — The Polo Club of Boca Raton (2023–Present)</div>
         <ul>
-          <li>Provide technical support for 400+ employees across a multi-building campus.</li>
-          <li>Maintain and troubleshoot network infrastructure including switches, access points, VLANs, and connectivity.</li>
-          <li>Manage user identity and access through Active Directory and Microsoft 365.</li>
-          <li>Support endpoint tools such as CrowdStrike and assist with general compliance monitoring.</li>
-          <li>Use Endpoint Central, Atera, and Goverlan for patching, imaging, and remote remediation.</li>
-          <li>Hands-on experience with Microsoft Teams Admin Center during Cisco-to-Teams phone migration.</li>
-          <li>Support iOS work phones and POS devices, Android signage, and Linux systems for small projects.</li>
+          <li>Provide technical support for 300+ employees across a multi-building campus, resolving hardware, software, network, and account issues.</li>
+          <li>Maintain and troubleshoot network infrastructure including switches, access points, VLANs, and property-wide connectivity.</li>
+          <li>Manage user accounts, permissions, and access controls within Active Directory and Microsoft 365.</li>
+          <li>Operate and maintain a ticketing system, prioritizing incidents based on urgency and impact.</li>
+          <li>Train staff on IT best practices, troubleshooting basics, and internal support procedures to reduce repeat incidents.</li>
+          <li>Use Endpoint Central, Atera, and Goverlan for patching, imaging, remote management, and system remediation.</li>
+          <li>Support Microsoft Teams Admin Center during migration from Cisco phones to Teams-based Yealink devices.</li>
+          <li>Assist with deployment and support of point-of-sale (POS) systems for retail and restaurant environments.</li>
+          <li>Support iOS work phones and POS devices, Android digital signage, and Linux systems used in small technical projects.</li>
         </ul>
       </div>
 
       <div class="card">
         <div class="job-title">Administrative Assistant — Rivero Real Estate Inc. (2021–2023)</div>
         <ul>
-          <li>Provided daily office and technical support including workstation, printer, and software issues.</li>
-          <li>Assisted agents with email setup, productivity tools, and general IT needs.</li>
-          <li>Helped manage client intake, office workflows, and basic documentation.</li>
+          <li>Provided tier 1 IT and office support in a small business environment.</li>
+          <li>Resolved workstation, printer, software, and basic networking issues.</li>
+          <li>Assisted agents with email setup, document tools, and daily technology needs.</li>
+          <li>Referred walk-in clients to agents and supported routine office workflows.</li>
+          <li>Maintained internal documentation and simple troubleshooting guides.</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Skills</h2>
+      <h2>Core Skills</h2>
       <div class="skills">
-        <div class="skill">Active Directory & Microsoft 365</div>
-        <div class="skill">Microsoft Teams Admin Center</div>
-        <div class="skill">Networking (VLANs, DHCP, DNS, UniFi)</div>
-        <div class="skill">Endpoint Central, Atera, Goverlan</div>
-        <div class="skill">CrowdStrike (general endpoint security)</div>
-        <div class="skill">iOS, Android & Linux devices</div>
-        <div class="skill">Open-source virtualization</div>
+        <div class="skill">Active Directory, Microsoft 365, Group Policy</div>
+        <div class="skill">Networking: TCP/IP, DHCP, DNS, VLANs, UniFi, Auvik</div>
+        <div class="skill">Endpoint Management: CrowdStrike, Endpoint Central, Atera, Goverlan</div>
+        <div class="skill">Device Ecosystems: iOS & POS, Android signage, Linux</div>
+        <div class="skill">Virtualization: Open-source hypervisors, VM deployment, snapshots</div>
+        <div class="skill">IT Operations: Imaging, deployments, asset management, documentation</div>
+        <div class="skill">Communication: Cross-team collaboration & user training</div>
       </div>
     </section>
 
@@ -247,7 +230,7 @@
     <section>
       <h2>Education</h2>
       <div class="card">
-        Florida State University — B.S. Economics (2021)
+        B.S. in Economics — Florida State University (2021)
       </div>
     </section>
 
