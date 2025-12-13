@@ -3,194 +3,275 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jordan Bauer - Resume</title>
+  <title>Jordan Bauer — Resume</title>
 
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+    }
+
+    [data-theme="dark"] {
+      --bg: #0b0f19;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --card: #111827;
+      --border: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      background: #e8edf2;
-      font-family: Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      color: #1a1a1a;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 24px;
     }
 
     /* HEADER */
     header {
-      background: #0b3c49;
-      color: white;
-      padding: 45px 20px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 50px;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: bold;
+    .name {
+      font-size: 2.1rem;
+      font-weight: 700;
     }
 
-    header h2 {
-      margin: 10px 0 15px;
-      font-size: 1.3rem;
-      font-weight: normal;
-      color: #c7e7f3;
-    }
-
-    header p {
-      margin: 6px 0;
+    .title {
+      color: var(--muted);
+      margin-top: 6px;
       font-size: 1.1rem;
     }
 
-    header a {
-      color: #a9e3ff;
-      text-decoration: none;
-      font-weight: bold;
+    .contact {
+      text-align: right;
+      font-size: 0.95rem;
     }
 
-    header a:hover {
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
       text-decoration: underline;
     }
 
-    /* MAIN SECTIONS */
+    /* TOGGLE */
+    .toggle {
+      margin-top: 12px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: transparent;
+    }
+
+    /* SECTIONS */
     section {
-      max-width: 900px;
-      margin: 35px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 48px;
     }
 
     h2 {
-      color: #0b3c49;
-      margin-top: 0;
-      letter-spacing: 0.5px;
+      font-size: 1.05rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      margin-bottom: 24px;
     }
 
     .job-title {
-      font-weight: bold;
-      color: #0b3c49;
-      margin-top: 22px;
-      font-size: 1.15rem;
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 10px;
     }
 
     ul {
-      list-style: none;
-      padding: 0;
+      padding-left: 18px;
+      margin: 0;
     }
 
     ul li {
-      margin: 12px 0;
-      padding: 12px;
-      background: #f5f7f9;
-      border-left: 4px solid #0b6f82;
-      border-radius: 6px;
+      margin-bottom: 10px;
     }
 
-    /* DOWNLOAD BUTTON AT BOTTOM */
-    .download-container {
+    /* SKILLS GRID */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .skill {
+      padding: 10px 14px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 0.95rem;
+    }
+
+    /* DOWNLOAD */
+    .download {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 60px;
     }
 
-    .download-btn {
+    .download a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 14px 26px;
-      background: #0b6f82;
+      padding: 14px 30px;
+      background: var(--accent);
       color: white;
       text-decoration: none;
-      border-radius: 10px;
-      font-weight: bold;
-      font-size: 1.15rem;
+      font-weight: 600;
+      border-radius: 999px;
+      font-size: 1rem;
     }
 
-    .download-btn:hover {
-      background: #1399ac;
+    .download a:hover {
+      opacity: 0.9;
     }
 
     footer {
       text-align: center;
-      padding: 22px;
-      background: #0b3c49;
-      color: white;
-      margin-top: 45px;
-      font-size: 0.95rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        flex-direction: column;
+        text-align: left;
+      }
+      .contact {
+        text-align: left;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="name">Jordan Bauer</div>
+        <div class="title">IT Technician</div>
+      </div>
 
-<header>
-  <h1>Jordan Bauer</h1>
-  <h2>IT Technician</h2>
+      <div class="contact">
+        <div><a href="mailto:jordybauer1@gmail.com">jordybauer1@gmail.com</a></div>
+        <div>(561) 843-7440</div>
+        <button class="toggle" onclick="toggleTheme()">Toggle theme</button>
+      </div>
+    </header>
 
-  <p>Email: <a href="mailto:jordybauer1@gmail.com">jordybauer1@gmail.com</a></p>
-  <p>Phone: (561) 843-7440</p>
-</header>
+    <section>
+      <h2>Experience</h2>
 
+      <div class="card">
+        <div class="job-title">IT Technician — The Polo Club of Boca Raton (2023–Present)</div>
+        <ul>
+          <li>Provide technical support for 400+ employees across a multi-building campus.</li>
+          <li>Maintain and troubleshoot network infrastructure including switches, access points, VLANs, and connectivity.</li>
+          <li>Manage user identity and access through Active Directory and Microsoft 365.</li>
+          <li>Support endpoint tools such as CrowdStrike and assist with general compliance monitoring.</li>
+          <li>Use Endpoint Central, Atera, and Goverlan for patching, imaging, and remote remediation.</li>
+          <li>Hands-on experience with Microsoft Teams Admin Center during Cisco-to-Teams phone migration.</li>
+          <li>Support iOS work phones and POS devices, Android signage, and Linux systems for small projects.</li>
+        </ul>
+      </div>
 
-<section>
-  <h2>Professional Experience</h2>
+      <div class="card">
+        <div class="job-title">Administrative Assistant — Rivero Real Estate Inc. (2021–2023)</div>
+        <ul>
+          <li>Provided daily office and technical support including workstation, printer, and software issues.</li>
+          <li>Assisted agents with email setup, productivity tools, and general IT needs.</li>
+          <li>Helped manage client intake, office workflows, and basic documentation.</li>
+        </ul>
+      </div>
+    </section>
 
-  <p class="job-title">IT Technician — The Polo Club of Boca Raton (2023–Present)</p>
-  <ul>
-    <li>Provide technical support for 400+ employees across a multi-building campus.</li>
-    <li>Troubleshoot and maintain network infrastructure including switches, APs, VLANs, and property-wide connectivity.</li>
-    <li>Manage user identity and access through Active Directory and Microsoft 365, improving onboarding workflows.</li>
-    <li>Assist with endpoint protection tools such as CrowdStrike and general compliance monitoring.</li>
-    <li>Use Endpoint Central, Atera, and Goverlan for system imaging, patching, and remote remediation.</li>
-    <li>Extensive experience with the Microsoft Teams Admin Center during migration from Cisco phones to Teams-based devices.</li>
-    <li>Support iOS work phones & POS systems, Android digital signage devices, and Linux devices used in small projects.</li>
-  </ul>
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">Active Directory & Microsoft 365</div>
+        <div class="skill">Microsoft Teams Admin Center</div>
+        <div class="skill">Networking (VLANs, DHCP, DNS, UniFi)</div>
+        <div class="skill">Endpoint Central, Atera, Goverlan</div>
+        <div class="skill">CrowdStrike (general endpoint security)</div>
+        <div class="skill">iOS, Android & Linux devices</div>
+        <div class="skill">Open-source virtualization</div>
+      </div>
+    </section>
 
-  <p class="job-title">Administrative Assistant — Rivero Real Estate Inc. (2021–2023)</p>
-  <ul>
-    <li>Provided daily support for staff including hardware/software troubleshooting and workstation setups.</li>
-    <li>Assisted agents with email configuration, productivity tools, and general IT needs.</li>
-    <li>Handled in-office client assistance and maintained basic documentation and system organization.</li>
-  </ul>
-</section>
+    <section>
+      <h2>Certifications</h2>
+      <div class="card">
+        AWS Solutions Architect – Associate<br>
+        AWS Cloud Practitioner<br>
+        CompTIA Network+
+      </div>
+    </section>
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Active Directory & Microsoft 365</li>
-    <li>Microsoft Teams Admin Center</li>
-    <li>Networking: VLANs, DHCP, DNS, UniFi</li>
-    <li>Endpoint Central, Atera, Goverlan</li>
-    <li>CrowdStrike (general endpoint security)</li>
-    <li>iOS, Android, Linux systems</li>
-    <li>Virtualization (open-source hypervisors)</li>
-  </ul>
-</section>
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        Florida State University — B.S. Economics (2021)
+      </div>
+    </section>
 
-<section>
-  <h2>Certifications</h2>
-  <ul>
-    <li>AWS Solutions Architect – Associate</li>
-    <li>AWS Cloud Practitioner</li>
-    <li>CompTIA Network+</li>
-  </ul>
-</section>
+    <div class="download">
+      <a href="Jordan_Bauer.pdf" target="_blank">Download PDF Resume</a>
+    </div>
 
-<section>
-  <h2>Education</h2>
-  <ul>
-    <li>Florida State University — B.S. Economics (2021)</li>
-  </ul>
-</section>
+    <footer>
+      © 2025 Jordan Bauer
+    </footer>
+  </div>
 
-<section class="download-container">
-  <a class="download-btn" href="Jordan_Bauer.pdf" target="_blank">
-    Download PDF Resume
-  </a>
-</section>
+  <script>
+    function toggleTheme() {
+      const theme = document.documentElement.getAttribute("data-theme");
+      const newTheme = theme === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
 
-<footer>
-  © 2025 Jordan Bauer
-</footer>
-
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+  </script>
 </body>
 </html>
