@@ -57,7 +57,8 @@
     .title {
       color: var(--muted);
       margin-top: 6px;
-      font-size: 1.1rem;
+      font-size: 1rem;
+      font-style: italic;
     }
 
     .contact {
@@ -102,10 +103,24 @@
       margin-bottom: 26px;
     }
 
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
     .job-title {
       font-weight: 600;
       font-size: 1.05rem;
-      margin-bottom: 12px;
+    }
+
+    .job-meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+      white-space: nowrap;
     }
 
     ul {
@@ -127,6 +142,17 @@
       border: 1px solid var(--border);
       border-radius: 14px;
       font-size: 0.95rem;
+    }
+
+    .skill strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--text);
+    }
+
+    .skill span {
+      color: var(--muted);
+      font-size: 0.88rem;
     }
 
     .download {
@@ -155,6 +181,7 @@
     @media (max-width: 720px) {
       header { flex-direction: column; }
       .contact { text-align: left; }
+      .job-header { flex-direction: column; gap: 2px; }
     }
   </style>
 </head>
@@ -164,10 +191,11 @@
     <header>
       <div>
         <div class="name">Jordan Bauer</div>
+        <div class="title">IT Systems &amp; Network Administration &nbsp;·&nbsp; AWS Certified Solutions Architect &nbsp;·&nbsp; CompTIA Network+</div>
       </div>
 
       <div class="contact">
-        <div><a href="mailto:Jordybauer1@gmail.com">Jordybauer1@gmail.com</a></div>
+        <div><a href="mailto:jordan@jordan-bauer.com">jordan@jordan-bauer.com</a></div>
         <div>(561) 843-7440</div>
         <div>Delray Beach, FL</div>
         <button class="toggle" onclick="toggleTheme()">Toggle theme</button>
@@ -175,53 +203,51 @@
     </header>
 
     <section>
-      <h2>Professional Experience</h2>
+      <h2>Experience</h2>
 
       <div class="card">
-        <div class="job-title">IT Technician — The Polo Club of Boca Raton (2023–Present)</div>
+        <div class="job-header">
+          <div class="job-title">IT Technician &mdash; The Polo Club of Boca Raton</div>
+          <div class="job-meta">Boca Raton, FL &nbsp;|&nbsp; 2023&ndash;Present</div>
+        </div>
         <ul>
-          <li>Provided technical support for 300+ employees across a multi-building campus, resolving hardware, software, network, and account issues.</li>
-          <li>Maintained and troubleshot network infrastructure including switches, access points, VLANs, and property-wide connectivity.</li>
-          <li>Managed user accounts, permissions, and access controls within Active Directory and Microsoft 365.</li>
-          <li>Operated and maintained a ticketing system, prioritizing incidents based on urgency and impact.</li>
-          <li>Trained staff on IT best practices, troubleshooting basics, and internal support procedures to reduce repeat incidents.</li>
-          <li>Used Endpoint Central, Atera, and Goverlan for patching, imaging, remote management, and system remediation.</li>
-          <li>Supported Microsoft Teams Admin Center during migration from Cisco phones to Teams-based Yealink devices.</li>
-          <li>Assisted with deployment and support of point-of-sale (POS) systems for retail and restaurant environments.</li>
-          <li>Supported iOS work phones and POS devices, Android digital signage, and Linux systems used in small technical projects.</li>
+          <li>Maintained network infrastructure across a multi-building campus &mdash; UniFi wireless, managed switches, VLANs, DHCP/DNS, and Auvik monitoring &mdash; covering connectivity for 500+ employees including staff without M365 accounts.</li>
+          <li>Administered Active Directory and Microsoft 365 environments, managing user accounts, group policy, security group permissions, conditional access policies, and license provisioning across multiple departments.</li>
+          <li>Managed endpoints using Endpoint Central, Atera, and Goverlan &mdash; handling patch cycles, OS imaging and deployment, remote remediation, and CrowdStrike across all devices.</li>
+          <li>Resolved hardware, software, network, and account incidents across the organization, operating a structured ticketing system and building a resolution knowledge base that reduced repeat escalations.</li>
+          <li>Executed migration from legacy Cisco desk phones to Microsoft Teams-based Yealink VoIP devices, handling device staging, configuration, and end-user training across all departments with minimal disruption to daily operations.</li>
+          <li>Supported POS systems across restaurant and retail operations, along with iOS corporate devices, Android digital signage, and Linux systems throughout the property.</li>
+          <li>Troubleshot and maintained a Dante-networked audio system distributed across multiple buildings and event spaces, resolving signal routing, device configuration, and connectivity issues in a live-event environment.</li>
+          <li>Assisted in the IT buildout for a new club restaurant, working with vendors and third-party support teams on infrastructure setup, POS deployment, and network connectivity to ensure all systems were operational by opening day.</li>
         </ul>
       </div>
 
       <div class="card">
-        <div class="job-title">Administrative Assistant — Rivero Real Estate Inc. (2021–2023)</div>
+        <div class="job-header">
+          <div class="job-title">Administrative Assistant &mdash; Rivero Real Estate Inc.</div>
+          <div class="job-meta">Miami, FL &nbsp;|&nbsp; 2021&ndash;2023</div>
+        </div>
         <ul>
-          <li>Provided tier 1 IT and office support in a small business environment.</li>
-          <li>Resolved workstation, printer, software, and basic networking issues.</li>
-          <li>Assisted agents with email setup, document tools, and daily technology needs.</li>
-          <li>Referred walk-in clients to agents and supported routine office workflows.</li>
-          <li>Maintained internal documentation and simple troubleshooting guides.</li>
+          <li>Supported IT needs for a small office environment, handling workstation setup, email configuration, printer troubleshooting, and basic networking alongside administrative responsibilities.</li>
         </ul>
       </div>
     </section>
 
     <section>
-      <h2>Core Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="skills">
-        <div class="skill">Active Directory, Microsoft 365, Group Policy</div>
-        <div class="skill">Networking: TCP/IP, DHCP, DNS, VLANs, UniFi, Auvik</div>
-        <div class="skill">Endpoint Management: CrowdStrike, Endpoint Central, Atera, Goverlan</div>
-        <div class="skill">Device Ecosystems: iOS & POS, Android signage, Linux</div>
-        <div class="skill">Virtualization: Open-source hypervisors, VM deployment, snapshots</div>
-        <div class="skill">IT Operations: Imaging, deployments, asset management, documentation</div>
-        <div class="skill">Communication: Cross-team collaboration & user training</div>
+        <div class="skill"><strong>Networking</strong><span>TCP/IP, DHCP, DNS, VLANs, Ubiquiti UniFi, Auvik, firewall/routing fundamentals</span></div>
+        <div class="skill"><strong>Identity &amp; Access</strong><span>Active Directory, Microsoft 365 Admin, Group Policy, Conditional Access, MFA</span></div>
+        <div class="skill"><strong>Endpoint Management</strong><span>Endpoint Central, Atera, Goverlan, CrowdStrike, OS imaging &amp; deployment</span></div>
+        <div class="skill"><strong>Cloud &amp; Telephony</strong><span>AWS Solutions Architect, Microsoft Teams Admin Center, Yealink VoIP</span></div>
+        <div class="skill"><strong>Systems &amp; Platforms</strong><span>Windows Server, Linux, open-source hypervisors, VM management, POS systems, iOS/Android device management</span></div>
       </div>
     </section>
 
     <section>
       <h2>Certifications</h2>
       <div class="card">
-        AWS Solutions Architect – Associate<br>
-        AWS Cloud Practitioner<br>
+        AWS Certified Solutions Architect &ndash; Associate<br>
         CompTIA Network+
       </div>
     </section>
@@ -229,7 +255,7 @@
     <section>
       <h2>Education</h2>
       <div class="card">
-        B.S. in Economics — Florida State University (2021)
+        B.S. in Economics &mdash; Florida State University (2021)
       </div>
     </section>
 
@@ -238,7 +264,7 @@
     </div>
 
     <footer>
-      © 2025 Jordan Bauer
+      &copy; 2026 Jordan Bauer
     </footer>
   </div>
 
