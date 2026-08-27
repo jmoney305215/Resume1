@@ -24,11 +24,14 @@
       --border: #1f2933;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Inter, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -72,7 +75,9 @@
       font-weight: 600;
     }
 
-    .contact a:hover { text-decoration: underline; }
+    .contact a:hover {
+      text-decoration: underline;
+    }
 
     .toggle {
       margin-top: 12px;
@@ -85,7 +90,9 @@
       background: transparent;
     }
 
-    section { margin-bottom: 52px; }
+    section {
+      margin-bottom: 52px;
+    }
 
     h2 {
       font-size: 0.95rem;
@@ -123,12 +130,21 @@
       white-space: nowrap;
     }
 
+    .promotion {
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
     ul {
       padding-left: 18px;
       margin: 0;
     }
 
-    ul li { margin-bottom: 10px; }
+    ul li {
+      margin-bottom: 10px;
+    }
 
     .skills {
       display: grid;
@@ -171,6 +187,10 @@
       font-size: 1rem;
     }
 
+    .download a:hover {
+      opacity: 0.9;
+    }
+
     footer {
       text-align: center;
       color: var(--muted);
@@ -179,107 +199,365 @@
     }
 
     @media (max-width: 720px) {
-      header { flex-direction: column; }
-      .contact { text-align: left; }
-      .job-header { flex-direction: column; gap: 2px; }
+      header {
+        flex-direction: column;
+      }
+
+      .contact {
+        text-align: left;
+      }
+
+      .job-header {
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .job-meta {
+        white-space: normal;
+      }
     }
   </style>
 </head>
 
 <body>
   <div class="container">
+
     <header>
       <div>
         <div class="name">Jordan Bauer</div>
-        <div class="title">IT Systems &amp; Network Administration &nbsp;·&nbsp; AWS Certified Solutions Architect &nbsp;·&nbsp; CompTIA Network+</div>
+
+        <div class="title">
+          IT Systems &amp; Network Administration
+          &nbsp;·&nbsp;
+          IT Manager
+          &nbsp;·&nbsp;
+          AWS Certified Solutions Architect
+        </div>
       </div>
 
       <div class="contact">
-        <div><a href="mailto:jordan@jordan-bauer.com">jordan@jordan-bauer.com</a></div>
+        <div>
+          <a href="mailto:jordan@jordan-bauer.com">
+            jordan@jordan-bauer.com
+          </a>
+        </div>
+
         <div>(561) 843-7440</div>
         <div>Delray Beach, FL</div>
-        <button class="toggle" onclick="toggleTheme()">Toggle theme</button>
+
+        <button class="toggle" onclick="toggleTheme()">
+          Toggle theme
+        </button>
       </div>
     </header>
 
+
+    <!-- EXPERIENCE -->
     <section>
       <h2>Experience</h2>
 
       <div class="card">
         <div class="job-header">
-          <div class="job-title">IT Technician &mdash; The Polo Club of Boca Raton</div>
-          <div class="job-meta">Boca Raton, FL &nbsp;|&nbsp; 2023&ndash;Present</div>
+          <div class="job-title">
+            IT Manager — The Polo Club of Boca Raton
+          </div>
+
+          <div class="job-meta">
+            Boca Raton, FL &nbsp;|&nbsp; 2026–Present
+          </div>
         </div>
+
+        <div class="promotion">
+          Promoted from IT Technician to IT Manager in 2026
+        </div>
+
         <ul>
-          <li>Maintained network infrastructure across a multi-building campus &mdash; UniFi wireless, managed switches, VLANs, DHCP/DNS, and Auvik monitoring &mdash; covering connectivity for 500+ employees including staff without M365 accounts.</li>
-          <li>Administered Active Directory and Microsoft 365 environments, managing user accounts, group policy, security group permissions, conditional access policies, and license provisioning across multiple departments.</li>
-          <li>Managed endpoints using Endpoint Central, Atera, and Goverlan &mdash; handling patch cycles, OS imaging and deployment, remote remediation, and CrowdStrike across all devices.</li>
-          <li>Resolved hardware, software, network, and account incidents across the organization, operating a structured ticketing system and building a resolution knowledge base that reduced repeat escalations.</li>
-          <li>Executed migration from legacy Cisco desk phones to Microsoft Teams-based Yealink VoIP devices, handling device staging, configuration, and end-user training across all departments with minimal disruption to daily operations.</li>
-          <li>Supported POS systems across restaurant and retail operations, along with iOS corporate devices, Android digital signage, and Linux systems throughout the property.</li>
-          <li>Troubleshot and maintained a Dante-networked audio system distributed across multiple buildings and event spaces, resolving signal routing, device configuration, and connectivity issues in a live-event environment.</li>
-          <li>Assisted in the IT buildout for a new club restaurant, working with vendors and third-party support teams on infrastructure setup, POS deployment, and network connectivity to ensure all systems were operational by opening day.</li>
+          <li>
+            Oversee network infrastructure, systems, and technology
+            operations supporting 300+ staff across a multi-building campus.
+          </li>
+
+          <li>
+            Assist with planning the IT side of construction and capital
+            projects, including new facility openings and upgrades to
+            retail and operational spaces.
+          </li>
+
+          <li>
+            Manage Veeam backups and disaster recovery, keeping virtual
+            machines, servers, and firewalls operational and backed up.
+          </li>
+
+          <li>
+            Administer Active Directory and Microsoft 365, including
+            user accounts, permissions, and access management.
+          </li>
+
+          <li>
+            Support FortiGate firewall administration, including policy
+            changes and web-filtering access controls for different users
+            and departments.
+          </li>
+
+          <li>
+            Maintain CrowdStrike security across endpoints to strengthen
+            the organization's endpoint security posture.
+          </li>
+
+          <li>
+            Troubleshoot and maintain switches, wireless access points,
+            VLANs, DHCP, DNS, and connectivity across the property.
+          </li>
+
+          <li>
+            Provide hands-on technical support across the property,
+            prioritize tickets based on urgency, and train staff on
+            IT fundamentals to reduce repeat issues.
+          </li>
+
+          <li>
+            Use Endpoint Central, Atera, and Goverlan for remote management,
+            patching, imaging, deployment, and system remediation.
+          </li>
+
+          <li>
+            Administer Microsoft Teams environments and supported the
+            migration from legacy Cisco phones to Teams-based Yealink
+            devices.
+          </li>
+
+          <li>
+            Support POS systems across retail and restaurant operations,
+            along with iOS work devices, Android digital signage, and
+            Linux systems.
+          </li>
+
+          <li>
+            Maintain AV infrastructure, including Dante audio/video
+            networking for IP-based routing between endpoints throughout
+            the facility.
+          </li>
+
+          <li>
+            Coordinate AV technology with technicians for live bands,
+            holiday events, Board of Governors meetings, town halls,
+            and conference room meetings.
+          </li>
         </ul>
       </div>
+
 
       <div class="card">
         <div class="job-header">
-          <div class="job-title">Administrative Assistant &mdash; Rivero Real Estate Inc.</div>
-          <div class="job-meta">Miami, FL &nbsp;|&nbsp; 2021&ndash;2023</div>
+          <div class="job-title">
+            IT Technician — The Polo Club of Boca Raton
+          </div>
+
+          <div class="job-meta">
+            Boca Raton, FL &nbsp;|&nbsp; 2023–2025
+          </div>
         </div>
+
         <ul>
-          <li>Supported IT needs for a small office environment, handling workstation setup, email configuration, printer troubleshooting, and basic networking alongside administrative responsibilities.</li>
+          <li>
+            Provided hands-on IT support across a multi-building
+            enterprise environment, troubleshooting hardware, software,
+            networking, accounts, and endpoint issues.
+          </li>
+
+          <li>
+            Supported Active Directory, Microsoft 365, Group Policy,
+            endpoint management, network infrastructure, and user access.
+          </li>
+
+          <li>
+            Managed endpoint deployments, imaging, patching, and remote
+            troubleshooting using Endpoint Central, Atera, and Goverlan.
+          </li>
+
+          <li>
+            Supported the migration from Cisco desk phones to
+            Microsoft Teams-based Yealink VoIP devices, including
+            staging, configuration, deployment, and user support.
+          </li>
+
+          <li>
+            Supported POS systems, iOS devices, Android digital signage,
+            Linux systems, and property-wide AV infrastructure.
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="card">
+        <div class="job-header">
+          <div class="job-title">
+            Administrative Assistant — Rivero Real Estate Inc.
+          </div>
+
+          <div class="job-meta">
+            Miami, FL &nbsp;|&nbsp; 2021–2023
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Provided Tier 1 IT support in a small office environment,
+            troubleshooting computers, printers, software, and basic
+            networking issues.
+          </li>
+
+          <li>
+            Assisted agents and staff with email setup, workstation
+            troubleshooting, document tools, and daily technology needs.
+          </li>
+
+          <li>
+            Maintained documentation and basic troubleshooting guides
+            to improve consistency when resolving common issues.
+          </li>
         </ul>
       </div>
     </section>
 
+
+    <!-- TECHNICAL SKILLS -->
     <section>
       <h2>Technical Skills</h2>
+
       <div class="skills">
-        <div class="skill"><strong>Networking</strong><span>TCP/IP, DHCP, DNS, VLANs, Ubiquiti UniFi, Auvik, firewall/routing fundamentals</span></div>
-        <div class="skill"><strong>Identity &amp; Access</strong><span>Active Directory, Microsoft 365 Admin, Group Policy, Conditional Access, MFA</span></div>
-        <div class="skill"><strong>Endpoint Management</strong><span>Endpoint Central, Atera, Goverlan, CrowdStrike, OS imaging &amp; deployment</span></div>
-        <div class="skill"><strong>Cloud &amp; Telephony</strong><span>AWS Solutions Architect, Microsoft Teams Admin Center, Yealink VoIP</span></div>
-        <div class="skill"><strong>Systems &amp; Platforms</strong><span>Windows Server, Linux, open-source hypervisors, VM management, POS systems, iOS/Android device management</span></div>
+
+        <div class="skill">
+          <strong>Identity &amp; Systems</strong>
+          <span>
+            Active Directory, Microsoft 365, Group Policy,
+            user and access management
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>Networking</strong>
+          <span>
+            UniFi wireless, FortiGate, TCP/IP, DHCP, DNS,
+            VLANs, Auvik
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>Backup &amp; Virtualization</strong>
+          <span>
+            Veeam Backup &amp; Recovery, VM deployment,
+            snapshots, isolated test environments
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>Endpoint Security &amp; Management</strong>
+          <span>
+            CrowdStrike, Endpoint Central, Atera,
+            Goverlan, imaging, patching, deployment
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>AV Systems</strong>
+          <span>
+            Dante audio/video networking, IP-based AV routing,
+            endpoint management, live-event support
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>Cloud &amp; Telephony</strong>
+          <span>
+            AWS Solutions Architect, Microsoft Teams Admin Center,
+            Yealink VoIP
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>Device Ecosystems</strong>
+          <span>
+            iOS, POS systems, Android digital signage,
+            Linux
+          </span>
+        </div>
+
+        <div class="skill">
+          <strong>IT Operations</strong>
+          <span>
+            Project planning, vendor coordination, deployments,
+            asset management, documentation, staff training
+          </span>
+        </div>
+
       </div>
     </section>
 
+
+    <!-- CERTIFICATIONS -->
     <section>
       <h2>Certifications</h2>
+
       <div class="card">
-        AWS Certified Solutions Architect &ndash; Associate<br>
+        AWS Certified Solutions Architect – Associate<br>
+        AWS Certified Cloud Practitioner<br>
         CompTIA Network+
       </div>
     </section>
 
+
+    <!-- EDUCATION -->
     <section>
       <h2>Education</h2>
+
       <div class="card">
-        B.S. in Economics &mdash; Florida State University (2021)
+        B.S. in Economics — Florida State University (2021)
       </div>
     </section>
 
+
+    <!-- DOWNLOAD -->
     <div class="download">
-      <a href="Jordan_Bauer_Resume.pdf" target="_blank">Download PDF Resume</a>
+      <a href="Jordan_Bauer_Resume.pdf" target="_blank">
+        Download PDF Resume
+      </a>
     </div>
+
 
     <footer>
       &copy; 2026 Jordan Bauer
     </footer>
+
   </div>
+
 
   <script>
     function toggleTheme() {
-      const theme = document.documentElement.getAttribute("data-theme");
-      const newTheme = theme === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", newTheme);
+      const theme =
+        document.documentElement.getAttribute("data-theme");
+
+      const newTheme =
+        theme === "dark" ? "light" : "dark";
+
+      document.documentElement.setAttribute(
+        "data-theme",
+        newTheme
+      );
+
       localStorage.setItem("theme", newTheme);
     }
 
-    const savedTheme = localStorage.getItem("theme");
+    const savedTheme =
+      localStorage.getItem("theme");
+
     if (savedTheme) {
-      document.documentElement.setAttribute("data-theme", savedTheme);
+      document.documentElement.setAttribute(
+        "data-theme",
+        savedTheme
+      );
     }
   </script>
+
 </body>
 </html>
